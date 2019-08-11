@@ -82,6 +82,8 @@ target_col_name='label_bc'
 """
 数据可视化
 """
+a = pm_train.groupby('id')
+b = a['cycle']
 plt.plot(pm_train.groupby('id')['cycle'], pm_train.groupby('id'))
 
 """
